@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav-bar">
+        <!-- <img id="logo" class="logo" src="./img/logo.jpg"/> -->
+        <h2 id="heading">Meal Planner</h2>
+    </div>
+    <div id="container" class="container">
+        <form>
+            <div class="div1">
+                <input type="number" class="inp" id="height" placeholder="Enter Height">
+                <input type="number" class="inp" id="weight" placeholder="Enter Weight">
+                <input type="number" class="inp" id="age" placeholder="Enter Age">  
+            </div>
+            <div class="div2">
+                <!-- <input type="text" class="inp" placeholder="gender"> -->
+                <select id="gender" class="inp">
+                    <option value="" disabled selected>Gender</option>
+                    <option value="Men">Men</option>
+                    <option value="Women">Women</option>
+                </select>
+
+                    <select id="activity" class="inp">
+                        <option value="" disabled selected>Activity Level</option>
+                    <option value="Light">Light</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Active">Active</option>
+                    </select>
+
+            </div>
+            <div class="div3">
+                <button class="btn-generate button-24">Generate Meals</button>
+            </div>
+        </form>
+    </div>
+    <!----------------------------------cards--------------------------------------------->
+
+    <div class="card-container1">
+        <!------------>
+    <div  id="card-container">
+
+        <div class="sub-contianer">
+            <h3 class="Meal">BREAKFAST</h3>
+            <img id="card1" class="cards"  alt="breakfast">
+            <div>
+                <h3 class="m1" id="title1">meal1</h3> 
+                <p class="calorie" id="cal1">calorie-300</p>
+                <button onclick="recepie('breakfast')" id="btn1" class="button-24">get recepie</button>
+            </div>
+        </div>
+
+        <div class="sub-contianer">
+            <h3 class="Meal">LUNCH</h3>
+            <img id="card2" class="cards" alt="lunch">
+            <div>
+                <h3 class="m1" id="title2">meal1</h3>
+                <p class="calorie" id="cal2">calorie-300</p>
+                <button onclick="recepie('lunch')" id="btn3" class="button-24">get recepie</button>
+            </div>
+        </div>
+
+        <div class="sub-contianer">
+            <h3 class="Meal" >DINNER</h3>
+            <img id="card3" class="cards"  alt="dinner">
+            <div>
+                <h3 class="m1"id="title3">meal1</h3>
+                <p class="calorie"  id="cal3">calorie-300</p>
+                <button onclick="recepie('dinner')" id="btn2" class="button-24">get recepie</button>
+            </div>
+        </div>
+
+
+    </div> 
+
+    </div>
+    
+<!-- --------------ingredients----------------------------------->
+
+    <div class="table-1">
+       
+            
+        
+        <div class="sub-contianer">
+            <h3 class="Meal" >Recepie</h3>
+            <!-- <img id="card4" class="cards"  alt="img"> -->
+            <div>
+                <p id="time"><b>Time:</b>  </p>
+                <p id="ingredients"><b> Ingredients:</b> </p>
+                <p id="steps"><b> Steps:</b> </p>
+                
+            </div>
+        </div>
+        
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
